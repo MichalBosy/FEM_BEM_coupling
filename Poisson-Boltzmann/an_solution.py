@@ -6,7 +6,7 @@ All functions output the analytical solution in kcal/mol
 import numpy
 from numpy import pi
 from scipy import special, linalg
-from scipy.misc import factorial
+from scipy.special import factorial
 from math import gamma
 
 
