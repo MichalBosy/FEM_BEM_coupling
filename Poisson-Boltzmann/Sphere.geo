@@ -1,17 +1,18 @@
 //+
-// Msh must be version 2.2
+// Remember to save the msh in older version
 
 Mesh.CharacteristicLengthMin = 0;
-Mesh.CharacteristicLengthMax = 0.0625;  //Change here for limit of h_max
+Mesh.CharacteristicLengthMax = 0.015625;  //Change here for limit of h_max
 
 cl__1 = 1;
-Point(1) = {0, 0, 0, 1};
-Point(2) = {1, 0, 0, 1};
-Point(3) = {-1, 0, 0, 1};
-Point(4) = {0, 1, 0, 1};
-Point(5) = {0, -1, 0, 1};
-Point(6) = {0, 0, 1, 1};
-Point(7) = {0, 0, -1, 1};
+radius = 2;
+Point(1) = {0, 0, 0, radius};
+Point(2) = {radius, 0, 0, radius};
+Point(3) = {-radius, 0, 0, radius};
+Point(4) = {0, radius, 0, radius};
+Point(5) = {0, -radius, 0, radius};
+Point(6) = {0, 0, radius, radius};
+Point(7) = {0, 0, -radius, radius};
 Circle(1) = {2, 1, 4};
 Circle(2) = {4, 1, 3};
 Circle(3) = {3, 1, 5};
