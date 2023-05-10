@@ -1,4 +1,10 @@
 # Dockerfile to create lab image in which FEM BEM examples can be run using FEniCSx and Bempp-cl
+#
+# To build and upload this image, run:
+#   docker login
+#   docker build -y fem-bem-lab
+#   docker tag fem-bem-lab:latest mscroggs/fem-bem-lab:latest
+#   docker push mscroggs/fem-bem-lab:latest
 
 ARG TINI_VERSION=0.19.0
 
